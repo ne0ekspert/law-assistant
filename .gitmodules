@@ -1,0 +1,3 @@
+[submodule "law"]
+	path = law
+	url = https://github.com/ne0ekspert/korean-law

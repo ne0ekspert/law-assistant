@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "law-assistant"
+version = "0.1.0"
+description = "FAISS-based RAG over Korean laws with Ollama/OpenAI/Anthropic"
+requires-python = ">=3.10"
+dependencies = [
+    "faiss-cpu>=1.7.4",
+    "openai>=1.35.10",
+    "anthropic>=0.32.0",
+    "requests>=2.31.0",
+    "tqdm>=4.66.0",
+    "python-dotenv>=1.0.1",
+    "orjson>=3.10.0",
+]
+
+[project.scripts]
+law-assistant = "law_assistant.cli:main"
+
